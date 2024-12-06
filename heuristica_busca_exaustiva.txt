@@ -1,0 +1,38 @@
+Função BuscaCliqueMaxima(Grafo, cliqueAtual, candidatos, cliqueMaxima)
+
+    Se candidatos está vazio:
+        Se tamanho(cliqueAtual) > tamanho(cliqueMaxima):
+            cliqueMaxima = cliqueAtual
+        Retornar
+
+    # Heurística
+    Ordenar candidatos em ordem decrescente de grau no Grafo
+
+    Para cada vértice v em candidatos:
+        # Poda: Verificar se é possível superar a cliqueMaxima atual
+        Se tamanho(cliqueAtual) + número de candidatos restantes < tamanho(cliqueMaxima):
+            # Se não é possível formar uma clique maior, ignora essa ramificação
+            Continuar para o próximo vértice
+
+        # Continua igual 
+        adjacenteATodos = Verdadeiro
+        Para cada vértice u em cliqueAtual:
+            Se Grafo[u][v] == 0:
+                adjacenteATodos = Falso
+                Quebrar
+
+        # Continua igual 
+        Se adjacenteATodos:
+            novoClique = cliqueAtual + [v]
+
+            Se tamanho(novoClique) > tamanho(cliqueMaxima):
+                cliqueMaxima = novoClique
+
+            novosCandidatos = []
+            Para cada w em candidatos após v:
+                Se Grafo[v][w] == 1:
+                    Adicionar w a novosCandidatos
+
+            # Poda: Só chama a recursão se for possível superar a clique máxima
+            Se tamanho(novoClique) + tamanho(novosCandidatos) >= tamanho(cliqueMaxima):
+                BuscaCliqueMaxima(Grafo, novoClique, novosCandidatos, cliqueMaxima)

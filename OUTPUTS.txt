@@ -1,0 +1,59 @@
+Grafo 1
+Clique max - Busca Exaustiva: 1 2 4 5 14 21 45 
+Tempo de exec. - Exaustiva: 0.0070965 segundos
+
+Clique max - OpenMP: 11 24 25 30 41 42 46 
+Tempo de exec. - OpenMP: 0.00320964 segundos
+
+Clique máxima encontrada: 1 24 25 30 42 43 45 
+Tempo de execução - MPI: 0.00813463 segundos
+
+Grafo 2
+Clique max - Busca Exaustiva: 2 3 4 9 10 14 21 26 33 41 42 47 
+Tempo de exec. - Exaustiva: 0.168397 segundos
+
+Clique max - OpenMP: 4 9 10 14 17 21 26 33 41 42 44 47 
+Tempo de exec. - OpenMP: 0.0462063 segundos
+
+Clique máxima encontrada: 2 4 9 10 14 21 26 33 41 42 44 47 
+Tempo de execução - MPI: 0.253332 segundos
+
+Grafo 3
+Clique max - Busca Exaustiva: 1 6 21 22 63 70 75 76 83 
+Tempo de exec. - Exaustiva: 0.0864181 segundos
+
+Clique max - OpenMP: 16 23 49 66 73 74 80 87 92 
+Tempo de exec. - OpenMP: 0.0265374 segundos
+
+Clique máxima encontrada: 1 6 21 31 63 70 75 76 83 
+Tempo de execução - MPI: 0.171806 segundos
+
+Grafo 4
+Clique max - Busca Exaustiva: 17 18 21 38 39 40 61 64 69 71 72 75 82 83 89 
+Tempo de exec. - Exaustiva: 14.7989 segundos
+
+Clique max - OpenMP: 17 18 38 39 40 43 44 50 61 64 69 71 75 82 89 
+Tempo de exec. - OpenMP: 3.29794 segundos
+
+Clique máxima encontrada: 17 18 38 39 40 43 44 50 61 64 69 71 75 82 89 
+Tempo de execução - MPI: 20.463 segundo
+
+Grafo 5 
+Clique max - Busca Exaustiva: 1 32 38 39 48 58 73 78 82 115 
+Tempo de exec. - Exaustiva: 0.636649 segundos
+
+Clique max - OpenMP: 9 55 76 84 88 91 93 97 125 132 
+Tempo de exec. - OpenMP: 0.146357 segundos
+
+Clique máxima encontrada: 1 32 38 39 48 58 78 82 137 146 
+Tempo de execução - MPI: 1.11745 segundos
+
+Grafo 6
+Clique max - Busca Exaustiva: 11 18 29 43 45 49 63 70 72 85 86 109 110 124 137 145 147 
+Tempo de exec. - Exaustiva: 973.618 segundos
+
+Clique max - OpenMP: 11 18 43 45 49 63 65 70 85 86 94 110 124 136 137 145 147 
+Tempo de exec. - OpenMP: 136.378 segundos
+
+Clique máxima encontrada: 11 18 43 45 49 63 65 70 85 86 94 110 124 136 137 145 147 
+Tempo de execução - MPI: 718.281 segundos
